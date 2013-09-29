@@ -8,6 +8,21 @@
   <link href="css/landing.css" rel="stylesheet" media="screen">
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script>
+
+  $(document).ready(function(){
+    $('#dispClass').hide();
+
+    if ($("#courses").val().length > 0) {
+      $("#book").attr("src",$('#courses').val());
+      $('#dispClass').show();
+    }     
+
+    
+
+  });
+
+  </script>
   
 </head>
 
@@ -76,19 +91,29 @@
       </div>
       <div class="span3">
 
-        <br> <br> <br> <br>
+        <br> <br> 
+        <div id="hots">
+          <h4>Hot Classes</h4>
 
-        <h4>Hot Classes</h4>
-        
-        <a href="#">Calculus 1</a> <br>
-        <a href="#">Calculus 2</a> <br>
-        <a href="#">Economics</a> <br>
-        <a href="#">General Biology</a> <br>
-        <a href="#">Macroeconomics</a> <br>
-        <a href="#">Calculus for Business</a> <br>
-        <a href="#">Microeconomics</a> <br>
-        <a href="#">Intro to Oceanography</a> <br>
-        <a href="#">Precalculus</a> <br>
+          <a href="#">Calculus 1</a> <br>
+          <a href="#">Calculus 2</a> <br>
+          <a href="#">Economics</a> <br>
+          <a href="#">General Biology</a> <br>
+          <a href="#">Macroeconomics</a> <br>
+          <a href="#">Calculus for Business</a> <br>
+          <a href="#">Microeconomics</a> <br>
+          <a href="#">Intro to Oceanography</a> <br>
+          <a href="#">Precalculus</a> <br>
+        </div>
+
+        <div id="dispClass">
+          <div class="row">
+            <div class="span4">
+              <img id="book" src="img/courses/Calculus 1.jpg">
+            </div>
+            <div class="span8"></div>
+          </div>
+        </div>
 
       </div>
     </div>

@@ -100,3 +100,12 @@ background-color: rgb(2, 180, 250);
 .ui-menu-item a:hover {
 color: white;
 }
+
+img#book{
+	width: 200px;
+	height: auto;
+}
+
+#dispClass{
+	margin-top: 50px;
+}
