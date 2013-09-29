@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CourseLinks | Study smart, learn more</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/landing.css" rel="stylesheet" media="screen">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="index.html"><b>C</b>ourse<b>L</b>inks</a>
+        <div class="nav-collapse">   
+          <ul class="nav pull-right">
+            <li class="divider-vertical"></li>
+            <li>
+              <a href="home.html" >Log in </a>
+            </li>
+            <li>
+              <a href="#">Sign up</a>
+            </li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div>
+    </div><!-- /navbar-inner -->
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="span9">
+        <br> <br> <br> <br> <br> <br> <br> <br>
+        <h1>What do you need to study?</h1>
+
+        <form action="" method="post" style="width: 100%; margin-top: 50px;">
+          <div class="input-prepend" ><span class="add-on"><i class="icon-book"></i></span>
+            <input type="text" id="courses" name="" placeholder="eg.MATH 211" >
+            
+            <script>
+            $(function() {
+
+              var availableCourses = [
+              "Calculus 1",
+              "Calculus 2",
+              "Economics",
+              "General Biology",
+              "Macroeconomics",
+              "Calculus for Business",
+              "Microeconomics",
+              "Intro to Oceanography",
+              "Precalculus"
+              ];
+
+              $( "#courses" ).autocomplete({
+                source: availableCourses
+              });
+
+            });
+            </script>
+
+          </div>
+        </form>
+        
+      </div>
+      <div class="span3">
+
+        <br> <br> <br> <br>
+
+        <h4>Hot Classes</h4>
+        
+        <a href="#">Calculus 1</a> <br>
+        <a href="#">Calculus 2</a> <br>
+        <a href="#">Economics</a> <br>
+        <a href="#">General Biology</a> <br>
+        <a href="#">Macroeconomics</a> <br>
+        <a href="#">Calculus for Business</a> <br>
+        <a href="#">Microeconomics</a> <br>
+        <a href="#">Intro to Oceanography</a> <br>
+        <a href="#">Precalculus</a> <br>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
